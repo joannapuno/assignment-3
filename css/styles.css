@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * *
 General
 * * * * * * * * * * * * * * * * * * * * */
-/* * {
+* {
   box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ General
 
 h1 {
     font-family: 'Roboto', sans-serif;
-} */
+}
 
 
 
@@ -21,25 +21,31 @@ h1 {
 Header
 * * * * * * * * * * * * * * * * * * * * */
 header {
+
     height: 66px;
-    background: #222;
+    background-image: linear-gradient(to left, 
+    #f660e9, 
+    #d25fe5, 
+    #ac5ddd, 
+    #875ad3, 
+    #6056c6);
 }
 
-/* header .container {
-    display: flex;
-} don't wanna change bootstrap
 
-*/
+
+
 
 .logo {
     color: pink;
-    width: 100px;
     margin-right: auto;
+
+   
 }
 
 .logo span {
     margin-left: 5px;
     color: #fff;
+    width: 200px;
 }
 
 header ul {
@@ -72,11 +78,54 @@ a:hover {
 Hero
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 800px;
-    background: url(../img/hero-background.jpg);
-    background-position: 80% 50%;
+    height: 600px;
+    padding: 80px;
+    padding-top: 80px;
+    color: rgb(110, 110, 110);
+    background-image: 
+    linear-gradient(90deg, 
+            rgba(161, 161, 161, 0.4), 
+            rgba(0,0,0,0.0)), 
+        url(../img/hero-background.jpg);
+    background-position: 80% 20%;
     background-size: cover;
 
+}
+
+.hero-content {
+    width: 50%;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display',serif;
+    font-size: 4em;
+    margin: 0;
+    font-weight: 400;
+    color: #646464;
+}
+
+
+.hero button {
+    color: #fff;
+    border:none;
+    background: #cf1e43;
+    padding: 10px 20px;
+}
+
+.hero button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #d25fe5;
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        height: 400px;
+    }
+    .hero-content {
+        width: 100%;
+    }
 }
 
 
@@ -87,7 +136,24 @@ Main
 * * * * * * * * * * * * * * * * * * * * */
 main {
     min-height: 400px;
-    padding: 80px 0;
+    padding: 60px 0;
+    width: 50%;
+    margin: 100px auto 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+main p { 
+    font-size: 16px;
 }
 
 
@@ -99,7 +165,12 @@ footer {
     background: rgb(49, 49, 49);
 }
 
-footer ul {
+
+
+
+
+
+/* footer ul {
     list-style: none;
     display: flex;
     align-items: space-between;
@@ -117,10 +188,17 @@ footer ul li {
 }
 
 footer .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-    flex-direction: row;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 100px ;
+    width: 50%;
+    justify-content: space-between;
 }
 
 
+a   {
+    color: white;
+    font-size: 25px;
+
+} */
