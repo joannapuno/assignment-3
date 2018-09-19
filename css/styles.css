@@ -1,0 +1,126 @@
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+/* * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+} */
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+header {
+    height: 66px;
+    background: #222;
+}
+
+/* header .container {
+    display: flex;
+} don't wanna change bootstrap
+
+*/
+
+.logo {
+    color: pink;
+    width: 100px;
+    margin-right: auto;
+}
+
+.logo span {
+    margin-left: 5px;
+    color: #fff;
+}
+
+header ul {
+    margin-bottom: 0;
+    display: flex;  
+    list-style: none; 
+        
+}
+
+
+header ul li a {
+    height: 66px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header ul li a:hover {
+    background: rgba(255, 255, 255, 0.404);
+}
+a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
+.hero {
+    height: 800px;
+    background: url(../img/hero-background.jpg);
+    background-position: 80% 50%;
+    background-size: cover;
+
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+main {
+    min-height: 400px;
+    padding: 80px 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    height: 300px;
+    background: rgb(49, 49, 49);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    flex-direction: row;
+     
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li {
+    padding: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+}
+
+
