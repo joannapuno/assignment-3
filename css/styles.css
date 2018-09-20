@@ -178,7 +178,7 @@ Hero
 
  .menu-scroll-down {
      height: 200px;
-     padding-top: 230px;
+     padding-top: 200px;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -289,12 +289,24 @@ Footer
 footer {
     height: 300px;
     background: #6340ff;
-    padding: 40px 0 80px;
+    /* padding: 40px 0 80px; */
     margin-top: 50px;
+    
 }
 
+
+.zigzag {
+    background:url(../img/zigzag-bg.svg);
+    height: 10px;
+    position: relative;
+    top: -10px;
+
+
+}
+
+
 footer h2 {
-    color: rgb(41, 41, 41);
+    color: #fff;
     font-size: 0.9em;
     text-transform: uppercase;
     margin: 0 0 20px 0;
@@ -310,7 +322,7 @@ footer li {
 }
 
 footer a {
-    color: #3f3f3f;
+    color:#fff;
     text-decoration: none;
     font-size: 0.8em;
     font-weight: 300;
