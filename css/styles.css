@@ -39,10 +39,12 @@ header {
 }
 
 .logo {
-    color: pink;
     margin-right: auto;
-    padding-left: 80px;
  
+}
+
+.logo i {
+    color: pink;
 }
 
 .logo span {
@@ -74,7 +76,7 @@ header ul li a:hover {
     background: rgba(255, 255, 255, 0.404);
 }
 a:hover {
-    color: pink;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -84,7 +86,16 @@ a:hover {
     border: none;
 }
 
-@media (max-width:600px) {
+.hamburger-icon a {
+    color: #fff;
+}
+
+.hamburger-icon a:hover {
+    color: #3f3f3f;
+}
+
+
+@media screen and (max-width:600px) {
     header ul {
         display: none;
     }
@@ -92,29 +103,42 @@ a:hover {
         display: block;
         color: #fff;
     }
+    .logo span {
+        display:none;
+    }
+    .logo i {
+        color: pink;
+    }
+
+
+
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 750px;
-    padding-left: 100px;
-    padding-top: 100px;
+    position: relative;
+    background-attachment: fixed;
+    height: 650px;
+    padding: 50px 50px 5px 50px;
     color: rgb(110, 110, 110);
     background-image: 
     linear-gradient(90deg, 
             rgba(161, 161, 161, 0.4), 
             rgba(0,0,0,0.0)), 
         url(../img/hero-background.jpg);
-    background-position: 80% 20%;
+    background-position: 80% 30%;
     background-size: cover;
 
 }
 
+
 .hero-content {
-    width: 50%;
-    margin: 100px auto;
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 80px;
+    
 }
 
 .hero h1 {
@@ -123,6 +147,7 @@ Hero
     margin: 0;
     font-weight: 400;
     color: #646464;
+    margin-bottom: 10px;
 }
 
 
@@ -141,35 +166,37 @@ Hero
 
 @media screen and (max-width:600px) {
     .hero {
-        height: 400px;
+        height: 500px;
     }
     .hero-content {
-        width: 100%;
+        display: none;
     }
 }
 
  /*Scroll-Down Menu  */
 
  .menu-scroll-down {
+     height: 200px;
+     padding-top: 230px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding: 40px 20px;
      transition: 0.3s ease all;
  }
 
- .menu-scroll-down h3 {
-     font-family: 'Roboto', sans-serif;
+ .menu-scroll-down h6 {
+     font-family: 'Playfair Display', sans-serif;
      font-size: 12px;
-     color: rgb(219, 50, 78);
+     letter-spacing: 0.3em;
+     color: rgb(97, 97, 97);
      margin: 0;
      font-weight: 400;
     
  }
 
  .menu-scroll-down a {
-     color: rgb(250, 111, 250);
+     color: rgb(252, 174, 174);
  }
  
 
@@ -179,11 +206,10 @@ Main
 * * * * * * * * * * * * * * * * * * * * */
 main {
     min-height: 400px;
-    padding: 40px;
+    padding: 10px 20px 30px;
     width: 100%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
+    margin: 10px auto;
+    display: inline-block;
     text-align: center;
 }
 
@@ -193,21 +219,65 @@ main h2 {
     font-size: 2.5em;
 }
 
-main p { 
-    font-size: 16px;
-}
 
 main .row {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-main .products-box{
-    background: red;
-    width: 100%;
+main .products-box {
     height: 200px;
-    margin: 5px;
+    margin: 30px 10px;
+    flex-basis: 300px;
 }
 
+main .products-box i, h6, p {
+    margin: 10px;
+}
+
+main .products-box h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+main .products-box i {
+    color: #6056c6;
+}
+
+main .products-box p {
+    font-family: 'Roboto' sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+
+}
+
+main .products-box hr {
+    border: 0.5px solid #3f3f3f64;
+    width: 30px;
+    margin: 5px auto;
+}
+
+/* .ending-image {
+    position: relative;
+    background-attachment: fixed;
+    height: 200px;
+    padding: 50px;
+    color: rgb(110, 110, 110);
+    background-image: 
+    linear-gradient(90deg, 
+            rgba(161, 161, 161, 0.4), 
+            rgba(0,0,0,0.0)), 
+        url(../img/parallax-image.jpg);
+    background-position: -10px 0px;
+    background-size: cover;
+
+} */
 
 /* * * * * * * * * * * * * * * * * * * * *
 Footer
