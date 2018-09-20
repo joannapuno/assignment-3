@@ -25,6 +25,7 @@ ul li {
 Header
 * * * * * * * * * * * * * * * * * * * * */
 
+
 header {
 
     height: 66px;
@@ -235,7 +236,7 @@ main .row {
 
 main .products-box {
     height: 200px;
-    margin: 30px 10px;
+    margin: 50px 10px;
     flex-basis: 300px;
 }
 
