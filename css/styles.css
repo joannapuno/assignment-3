@@ -25,7 +25,7 @@ ul li {
 Header
 * * * * * * * * * * * * * * * * * * * * */
 
-/* 
+
 .zigzag-header {
     background-image: url(../img/zigzag-bg-header.svg);
     height: 10px;
@@ -34,7 +34,7 @@ Header
     z-index: 100;
 
 
-} */
+}
 
 header {
 
