@@ -305,6 +305,10 @@ footer {
 
 }
 
+.container {
+    padding-top: 15px;
+}
+
 
 footer h2 {
     color: #fff;
