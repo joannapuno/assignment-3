@@ -25,6 +25,16 @@ ul li {
 Header
 * * * * * * * * * * * * * * * * * * * * */
 
+/* 
+.zigzag-header {
+    background-image: url(../img/zigzag-bg-header.svg);
+    height: 10px;
+    position: relative;
+    bottom: -65px;
+    z-index: 100;
+
+
+} */
 
 header {
 
@@ -37,7 +47,6 @@ header {
     #6056c6);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    border-radius: 0px 0px 10px 10px;
 }
 
 .logo {
