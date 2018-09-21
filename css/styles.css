@@ -26,7 +26,7 @@ Header
 * * * * * * * * * * * * * * * * * * * * */
 
 
-.zigzag-header {
+/* .zigzag-header {
     background-image: url(../img/zigzag-bg-header.svg);
     height: 10px;
     position: relative;
@@ -34,7 +34,7 @@ Header
     z-index: 100;
 
 
-}
+} */
 
 header {
 
@@ -147,7 +147,7 @@ Hero
 
 .hero-content {
     width: 40%;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: 80px;
     
 }
@@ -161,12 +161,17 @@ Hero
     margin-bottom: 10px;
 }
 
+.hero p {
+    margin-left: 5px;
+}
+
 
 .hero button {
     color: #fff;
     border:none;
     background: #cf1e43;
     padding: 10px 20px;
+    margin-top: 10px;
 }
 
 .hero button:hover {
@@ -188,10 +193,9 @@ Hero
 
  .menu-scroll-down {
      height: 200px;
-     padding-top: 200px;
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: flex-end;
      align-items: center;
     
      
@@ -218,39 +222,57 @@ Hero
 Main
 * * * * * * * * * * * * * * * * * * * * */
 
-main {
-    min-height: 400px;
-    padding: 10px 20px 30px;
-    width: 100%;
-    margin: 50px auto;
-    display: inline-block;
-    text-align: center;
-}
 
+
+main {
+    min-height: 600px;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 30px auto;
+    
+}
 
 main h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
+    margin-bottom: 50px;
+     
 }
 
 
+/* Products Block */
+
+.products-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
 main .row {
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 20px;
 
 }
 
 main .products-box {
-    height: 200px;
-    margin: 50px 10px;
+    height: 300px;
+    margin: 10px 10px;
     flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 main .products-box i, h6, p {
     margin: 10px;
+    text-align: center;
 }
 
 main .products-box h6 {
@@ -260,8 +282,10 @@ main .products-box h6 {
     color: #4d4d4d;
 }
 
+
+
 main .products-box i {
-    color: #6056c6;
+    color: #6340ff;
 }
 
 main .products-box p {
@@ -277,11 +301,35 @@ main .products-box hr {
     margin: 5px auto;
 }
 
-/* .ending-image {
+
+
+
+/* Welcome Block */
+
+
+.welcome-block {
+    background: #404040;
+    padding: 100px 100px;
+    margin: 0px 0px 50px;
+    
+}
+
+.welcome-content {
+    background: white;
+    padding: 80px 50px;
+}
+
+
+.welcome-content {
+    text-align: center;
+}
+
+
+
+.ending-image {
     position: relative;
     background-attachment: fixed;
-    height: 200px;
-    padding: 50px;
+    height: 80px;
     color: rgb(110, 110, 110);
     background-image: 
     linear-gradient(90deg, 
@@ -291,17 +339,14 @@ main .products-box hr {
     background-position: -10px 0px;
     background-size: cover;
 
-} */
+}
 
 /* * * * * * * * * * * * * * * * * * * * *
 Footer
 * * * * * * * * * * * * * * * * * * * * */
 footer {
     height: 300px;
-    background: #6340ff;
-    /* padding: 40px 0 80px; */
-    margin-top: 50px;
-    
+    background: #6340ff;  
 }
 
 
