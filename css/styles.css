@@ -30,9 +30,18 @@ ul li {
             rgba(161, 161, 161, 0.4), 
             rgba(0,0,0,0.0)), 
         url(../img/parallax-image.jpg);
-    background-position: -10px 0px;
+    background-position: 0px 200px;
     background-size: cover;
 
+}
+
+.dotted-line {
+    border-top: 6px dotted #cf1e43;
+    width: 80px;
+    margin: 40px auto;
+   
+   
+    
 }
 
 
@@ -55,14 +64,15 @@ Header
 header {
 
     height: 66px;
-    background-image: linear-gradient(to left, 
-    #f660e9, 
-    #d25fe5, 
-    #ac5ddd, 
-    #875ad3, 
-    #6056c6);
+    background: rgb(246,96,233);
+    background: 
+        linear-gradient(354deg, 
+        #f660e9 0%, 
+        #6056c6 50%);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    padding-bottom: 5px;
+    padding-left: 20px;
 }
 
 .logo {
@@ -76,7 +86,7 @@ header {
 
 .logo span {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 5px;
     color: #fff;
 
 }
@@ -85,7 +95,12 @@ header ul {
     margin-bottom: 0;
     display: flex;  
     list-style: none; 
+    font-size: 15px;
         
+}
+
+header li {
+    margin-right: 20px;
 }
 
 
@@ -229,7 +244,7 @@ Hero
  }
 
  .menu-scroll-down a {
-     color: rgb(245, 115, 115);
+     color: #cf1e43;
  }
  
  
@@ -249,11 +264,12 @@ main {
     
 }
 
-main h2 {
+* main h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     margin-bottom: 30px;
     margin-top: 5px;
+    text-align: center;
      
 }
 
@@ -323,9 +339,11 @@ main .products-box hr {
 
 
 .welcome-block {
-    background: #404040;
-    padding: 100px 100px;
-    margin: 0px;
+    background:linear-gradient(354deg, 
+        rgba(246,96,233,1) 0%, 
+        rgba(96,86,198,1) 50%);
+    padding: 80px 80px;
+    margin: 0px 0px 50px 0px;
     
 }
 
@@ -355,35 +373,21 @@ main .products-box hr {
     color: #fff;
 }
 
-.products-image-grid h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    text-align: center;
 
-
-}
-.products-image {
+.products-image-grid {
     list-style-type: none;
     margin: 0;
     padding: 20px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-
-}
+    align-items: center;
    
     
-.products-image img {
-    width: 100%;
-    margin: 5px;
-    height: 100%;
-    padding: 0;
-
 }
+       
 
 
 
@@ -391,29 +395,33 @@ main .products-box hr {
 /* PRE-Footer */
 
 .pre-footer-wrapper {
-    background: #fdb020;
+    background: rgb(210, 210, 210);
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 0;
     height: 400px;
+    margin: 80px 0px 0px 0px;
 }
 
 .subscription-box {
     width: 50%;
     height: 100%;
-    padding: 50px;
+    padding: 55px;
     margin:30px;
+ 
 }
 
 .subscription-box h6 {
     font-family: 'Playfair Display', cursive;
     font-size: 40px;
+   
 }
 
 .subscription-box p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+   
 }
 
 .subscription-box .input-box {
