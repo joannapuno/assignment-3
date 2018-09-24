@@ -519,6 +519,32 @@ main .products-box hr {
     
 }
 
+@media screen and (max-width:600px) {
+    .img-box {
+        display: none;
+    }
+    .subscription-box {
+        background-image: url(../img/img3.jpg);
+        background-position: 80% 50%;
+        background-size: cover;
+        width: 100%;
+        padding: 50px;
+        margin: 0;
+        
+    }
+    .subscription-box h6 {
+        font-size: 30px;
+    }
+
+    .subscription-box p {
+        font-size: 15px;
+    }
+
+    .input-box input {
+        margin-top: 80px;
+    }
+}
+
 
 
 
